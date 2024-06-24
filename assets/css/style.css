@@ -25,38 +25,42 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(209, 33%, 70%) 3%, 
+    hsl(209, 27%, 46%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsl(209, 35%, 57%) 0%, 
     hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+  ), hsl(209, 27%, 46%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    hsl(126, 20%, 35%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsl(126, 38%, 66%) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+  ), hsl(209, 27%, 46%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    hsl(209, 51%, 57%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(126, 38%, 66%), 
+    hsl(126, 24%, 55%)
   );
 
   /* solid */
+  /* borders: jet 
+  Main subsection fillling : eerie 2
+  smaller section fillling : eerie 1
+  smoky black: overall bakcground */
 
-  --jet: hsl(0, 0%, 22%);
+  /* --jet: hsl(0, 0%, 22%); 
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
@@ -67,7 +71,20 @@
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --bittersweet-shimmer: hsl(0, 43%, 51%); */
+
+  --jet: hsl(209, 56%, 46%); 
+  --onyx: hsl(209, 33%, 70%);
+  --eerie-black-1: hsl(241, 66%, 98%)
+  --eerie-black-2: hsl(209, 100%, 97%);
+  --smoky-black: hsl(209, 53%, 94%); 
+  --white-1: hsl(209, 26%, 13%);
+  --white-2: hsl(209, 26%, 18%);
+  --orange-yellow-crayola: hsl(126, 20%, 35%);
+  --vegas-gold: hsl(121, 17%, 62%);
+  --light-gray: hsl(209, 26%, 27%);
+  --light-gray-70: hsl(184, 26%, 36%);
+  --bittersweet-shimmer: hsl(271, 35%, 52%); 
 
   /**
    * typography
@@ -459,7 +476,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsl(209, 61%, 70%);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -650,7 +667,7 @@ main {
 }
 
 .overlay.active {
-  opacity: 0.8;
+  opacity: 1;
   visibility: visible;
   pointer-events: all;
 }
